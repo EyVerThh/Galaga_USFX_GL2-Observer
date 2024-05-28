@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Galaga_USFX_GL2",
+			"Path": "D:\\Unreal Engine Documentos\\Galaga_USFX_GL2 - Observer\\Source\\Galaga_USFX_GL2.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Galaga_USFX_GL2Editor",
+			"Path": "D:\\Unreal Engine Documentos\\Galaga_USFX_GL2 - Observer\\Source\\Galaga_USFX_GL2Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

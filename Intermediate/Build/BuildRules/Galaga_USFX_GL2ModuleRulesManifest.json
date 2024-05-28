@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Unreal Engine Documentos\\Galaga_USFX_GL2 - Observer\\Source\\Galaga_USFX_GL2\\Galaga_USFX_GL2.Build.cs",
+		"D:\\Unreal Engine Documentos\\Galaga_USFX_GL2 - Observer\\Source\\Galaga_USFX_GL2.Target.cs",
+		"D:\\Unreal Engine Documentos\\Galaga_USFX_GL2 - Observer\\Source\\Galaga_USFX_GL2Editor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

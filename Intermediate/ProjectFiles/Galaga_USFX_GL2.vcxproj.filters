@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Galaga_USFX_GL2.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{BEF48FC8-5255-48F6-B61F-8CAD0D506493}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Galaga_USFX_GL2.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Galaga_USFX_GL2Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{BEDB7207-CB55-47D9-806C-6B61242DF36D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Galaga_USFX_GL2">
+      <UniqueIdentifier>{08E7BA40-17AA-4CD7-912A-2F069F0944D1}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\FabricaNaves.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\FabricaNaves.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\FacadeColision.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\FacadeColision.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\FacadeNaves.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\FacadeNaves.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Galaga_USFX_GL2\Galaga_USFX_GL2.Build.cs">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\Galaga_USFX_GL2.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\Galaga_USFX_GL2.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\Galaga_USFX_GL2GameMode.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\Galaga_USFX_GL2GameMode.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\Galaga_USFX_GL2Pawn.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\Galaga_USFX_GL2Pawn.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\Galaga_USFX_GL2Projectile.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\Galaga_USFX_GL2Projectile.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\NaveEnemiga.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\NaveEnemiga.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\NaveEnemigaCaza.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\NaveEnemigaCaza.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\NaveEnemigaEspia.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\NaveEnemigaEspia.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\NaveEnemigaNodriza.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\NaveEnemigaNodriza.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\NaveEnemigaTransporte.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\NaveEnemigaTransporte.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
