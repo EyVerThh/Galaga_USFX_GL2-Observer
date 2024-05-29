@@ -5,6 +5,8 @@
 #include "Components/StaticMeshComponent.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Engine/StaticMesh.h"
+#include "RadarNaves.h"
+#include "Galaga_USFX_GL2GameMode.generated.h"
 
 // Sets default values
 ANaveEnemiga::ANaveEnemiga()
@@ -18,6 +20,9 @@ ANaveEnemiga::ANaveEnemiga()
 	//mallaNaveEnemiga->SetStaticMesh(malla.Object);
 	mallaNaveEnemiga->SetupAttachment(RootComponent);
 	RootComponent = mallaNaveEnemiga;
+
+	bEscapar = false;	
+	bRetornar = false;
 }
 
 // Called when the game starts or when spawned
@@ -34,6 +39,48 @@ void ANaveEnemiga::Tick(float DeltaTime)
 
 
 
+
+}
+
+//void ANaveEnemiga::Actualizar(APublisher* _Publicador)
+//{
+//}
+
+void ANaveEnemiga::EstablecerRadar(ARadar* _Radar)
+{
+	Radar = _Radar;	
+	Radar->Suscribirse(this);
+}
+
+void ANaveEnemiga::Escapar()
+{
+	float DañoRecivido = Radar->GetDañoRecivido();
+	if (DañoRecivido <= 10)
+	{
+		bEscapar = true;
+	}
+}
+
+void ANaveEnemiga::Dessuscribirse()
+{
+	if(Radar)
+	{
+		Radar->Dessuscribirse(this);
+	}
+}
+
+void ANaveEnemiga::EscaparNave(float Deltatime)
+{ 
+	if (bEscapar == true)
+	{
+		SetActorLocation(FMath::VInterpTo(GetActorLocation(), FVector(1700.0f, -147.0f, 215.0f), DeltaTime, 0.5));
+		Curarse();
+	}
+	if (GetActorLocation().Equals(FVector(1700.0f, -147.0f, 215.0f), 200))
+	{
+		bEscape = false;
+		bRetorno = true;
+	}
 
 }
 

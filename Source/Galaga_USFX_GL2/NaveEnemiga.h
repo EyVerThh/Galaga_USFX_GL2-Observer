@@ -4,12 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Subscriber.h"
 #include "NaveEnemiga.generated.h"
 
 class UstaticMeshComponent;
 
 UCLASS(abstract)
-class GALAGA_USFX_GL2_API ANaveEnemiga : public AActor
+class GALAGA_USFX_GL2_API ANaveEnemiga : public AActor, public ISubscriber
 {
 	GENERATED_BODY()
 
@@ -68,6 +69,24 @@ public:
 protected:
 	void Mover(float DeltaTime) PURE_VIRTUAL(ANaveEnemiga::Mover, );
 
+	//**********observer**********
+public: 
 
+	bool bEscapar;
+	bool BRetornar;
+
+	
+	//Radar
+
+	UPROPERTY(VisibleAnywhere, Category = "Subscriber")
+	class ARadar* Radar;
+	bool bEscapar;
+	bool BRetornar;
+	void EstablecerRadar(class ARadar* _Radar);	
+	virtual void Actualizar(APublisher* _Publicador) override;
+	void Escapar();
+	void Dessuscribirse();
+	void EscaparNave(float deltaTime);	
+
+	virtual void Curarse() PURE_VIRTUAL(ANaveEnemiga::Curarse, ); //sirve para que la nave se cure
 };
-

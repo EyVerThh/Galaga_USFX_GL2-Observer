@@ -16,6 +16,7 @@ ANaveEnemigaCaza::ANaveEnemigaCaza()
 	mallaNaveEnemiga->SetStaticMesh(malla.Object);
 
 	VelocidadYCaza = 100.0f;
+    energia = 10 
 
 }
 

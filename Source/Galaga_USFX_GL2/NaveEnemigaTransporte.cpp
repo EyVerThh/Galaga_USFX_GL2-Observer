@@ -16,6 +16,7 @@ ANaveEnemigaTransporte::ANaveEnemigaTransporte()
 	mallaNaveEnemiga->SetStaticMesh(malla.Object);
 
     VelocidadYTransporte = 100.0f;
+    energia = 10
 
 	dimensionCargaOcupada = 300.0f;
 	dimensionCargaDisponible = 700.0f;

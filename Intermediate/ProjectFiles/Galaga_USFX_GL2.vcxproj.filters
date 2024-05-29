@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Galaga_USFX_GL2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{BEF48FC8-5255-48F6-B61F-8CAD0D506493}</UniqueIdentifier>
+      <UniqueIdentifier>{A68EB8BE-ED6B-4F34-B5AD-69C67C718363}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Galaga_USFX_GL2.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{BEDB7207-CB55-47D9-806C-6B61242DF36D}</UniqueIdentifier>
+      <UniqueIdentifier>{ECD49E93-5EB8-4C91-9009-F1AE36875E8C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Galaga_USFX_GL2">
-      <UniqueIdentifier>{08E7BA40-17AA-4CD7-912A-2F069F0944D1}</UniqueIdentifier>
+      <UniqueIdentifier>{EE4DD0C5-243D-4413-8558-CA37FC6C0DA4}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Galaga_USFX_GL2\FabricaNaves.cpp">
       <Filter>Source\Galaga_USFX_GL2</Filter>
@@ -107,6 +107,24 @@
       <Filter>Source\Galaga_USFX_GL2</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Galaga_USFX_GL2\NaveEnemigaTransporte.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\Publisher.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\Publisher.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\RadarNaves.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\RadarNaves.h">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_GL2\Subscriber.cpp">
+      <Filter>Source\Galaga_USFX_GL2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_GL2\Subscriber.h">
       <Filter>Source\Galaga_USFX_GL2</Filter>
     </ClInclude>
   </ItemGroup>
