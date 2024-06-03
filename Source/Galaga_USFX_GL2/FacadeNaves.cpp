@@ -8,26 +8,43 @@
 #include "NaveEnemigaNodriza.h"
 #include "NaveEnemigaTransporte.h"
 #include "FabricaNaves.h"
+#include "RadarNaves.h"
 
 // Sets default values
 AFacadeNaves::AFacadeNaves()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+    VidaPromedio = 0;
 }
 
 // Called when the game starts or when spawned
 void AFacadeNaves::BeginPlay()
 {
 	Super::BeginPlay();
+
+    RadarNaves = GetWorld()->SpawnActor<ARadarNaves>(ARadarNaves::StaticClass());
 	
+    UbicacionNaveEnemigaCaza = FVector(-380.0f, -300.0f, 200.0f);
 }
 
 // Called every frame
 void AFacadeNaves::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+    for (int i = 0; i < TANavesEnemigas.Num(); i++)
+    {
+        VidaPromedio = (TANavesEnemigas[i]-> vida + VidaPromedio / TANavesEnemigas.Num());
+        if (VidaPromedio < 20)
+        {
+            RadarNaves->SetVidaPromedio(10);
+        }
+        if (i == TANavesEnemigas.Num())
+        {
+            VidaPromedio = 0;
+        }
+    }
 
 }
 void AFacadeNaves::SPAWN_NAVES_ENEMIGAS()
@@ -54,29 +71,30 @@ void AFacadeNaves::SPAWN_NAVES_ENEMIGAS()
     if (World != nullptr)
     {
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 5; i++) {
             FVector ubicacionActual1 = FVector(ubicacionInicialNaves1.X, ubicacionInicialNaves1.Y + 300.0f * (float)i, ubicacionInicialNaves1.Z);
             ANaveEnemiga* NaveEnemigaCaza = AFabricaNaves::FabricarNaves("NaveEnemigaCaza", World, ubicacionActual1, rotacionNave1);
+            NaveEnemigaCaza->EstablecerRadar(RadarNaves);
             TANavesEnemigas.Add(NaveEnemigaCaza);
         }
             FVector ubicacionActual2 = FVector(ubicacionInicialNaves2.X - 300.0f, ubicacionInicialNaves2.Y, ubicacionInicialNaves2.Z);
-        for (int j = 0; j < 3; j++) {
+        for (int j = 0; j < 2; j++) {
             ubicacionActual2.Y = ubicacionInicialNaves2.Y + 300.0f * (float)j;
             ANaveEnemiga* NaveEnemigaTransporte = AFabricaNaves::FabricarNaves("NaveEnemigaTransporte", World, ubicacionActual2, rotacionNave2);
             TANavesEnemigas.Add(NaveEnemigaTransporte);
         }
         FVector ubicacionActual3 = FVector(ubicacionInicialNaves3.X - 300.0f, ubicacionInicialNaves3.Y, ubicacionInicialNaves3.Z);
-        for (int j = 0; j < 5; j++) {
+        for (int j = 0; j < 2; j++) {
             ubicacionActual3.Y = ubicacionInicialNaves3.Y + 300.0f * (float)j;
             ANaveEnemiga* NaveEnemigaEspia = AFabricaNaves::FabricarNaves("NaveEnemigaEspia", World, ubicacionActual3, rotacionNave3);
             TANavesEnemigas.Add(NaveEnemigaEspia);
         }
-        FVector ubicacionActual4 = FVector(ubicacionInicialNaves4.X - 300.0f, ubicacionInicialNaves4.Y, ubicacionInicialNaves4.Z);
+        /*FVector ubicacionActual4 = FVector(ubicacionInicialNaves4.X - 300.0f, ubicacionInicialNaves4.Y, ubicacionInicialNaves4.Z);
         for (int j = 0; j < 4; j++) {
             ubicacionActual4.Y = ubicacionInicialNaves4.Y + 300.0f * (float)j;
             ANaveEnemiga* NaveEnemigaNodriza = AFabricaNaves::FabricarNaves("NaveEnemigaNodriza", World, ubicacionActual4, rotacionNave4);
             TANavesEnemigas.Add(NaveEnemigaNodriza);
-        }
+        }*/
     }
 }
 
@@ -85,10 +103,15 @@ void AFacadeNaves::DestruirNavesEnemigas(UPrimitiveComponent* HitComp, AActor* O
     if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL))
     {
 		// Destruye la nave enemiga
-		ANaveEnemiga* NaveEnemiga = Cast<ANaveEnemiga>(OtherActor);
+		/*ANaveEnemiga* NaveEnemiga = Cast<ANaveEnemiga>(OtherActor);
 		if (NaveEnemiga != nullptr)
 		{
 			NaveEnemiga->Destroy();
+		}*/
+        ANaveEnemigaCaza* NaveEnemigaCaza = Cast<ANaveEnemigaCaza>(OtherActor);
+        if(NaveEnemigaCaza != nullptr)
+		{
+			NaveEnemigaCaza->recibirDanio();
 		}
 	}
 }

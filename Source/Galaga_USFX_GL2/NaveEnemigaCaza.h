@@ -24,4 +24,7 @@ public:
 	virtual void Mover(float DeltaTime);
 
 	float VelocidadYCaza;
+
+	void Curarse() override;
+	void recibirDanio() override;
 };

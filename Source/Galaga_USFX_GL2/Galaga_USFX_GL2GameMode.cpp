@@ -8,10 +8,13 @@
 #include "NaveEnemigaNodriza.h"	
 #include "NaveEnemigaTransporte.h"
 #include "FacadeNaves.h"
+#include "RadarNaves.h"
 AGalaga_USFX_GL2GameMode::AGalaga_USFX_GL2GameMode()
 {
 	// set default pawn class to our character class
 	DefaultPawnClass = AGalaga_USFX_GL2Pawn::StaticClass();
+    PrimaryActorTick.bCanEverTick = true;
+    VidaPromedio = 0;
 }   
 
 

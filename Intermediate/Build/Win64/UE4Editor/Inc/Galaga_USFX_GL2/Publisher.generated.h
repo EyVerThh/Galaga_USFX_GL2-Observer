@@ -58,7 +58,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APublisher)
 
 
-#define Galaga_USFX_GL2___Observer_Source_Galaga_USFX_GL2_Publisher_h_12_PRIVATE_PROPERTY_OFFSET
+#define Galaga_USFX_GL2___Observer_Source_Galaga_USFX_GL2_Publisher_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__Suscriptores() { return STRUCT_OFFSET(APublisher, Suscriptores); }
+
+
 #define Galaga_USFX_GL2___Observer_Source_Galaga_USFX_GL2_Publisher_h_9_PROLOG
 #define Galaga_USFX_GL2___Observer_Source_Galaga_USFX_GL2_Publisher_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

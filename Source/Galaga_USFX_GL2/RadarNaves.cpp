@@ -3,9 +3,15 @@
 
 #include "RadarNaves.h"
 
+ARadarNaves::ARadarNaves()
+{
+		PrimaryActorTick.bCanEverTick = true;
+
+}
+
 void ARadarNaves::BeginPlay()
 {
-	PrimaryActorTick.bCanEverTick = true;
+		Super::BeginPlay();
 }
 
 void ARadarNaves::Tick(float DeltaTime)
@@ -20,9 +26,11 @@ void ARadarNaves::VidaNave()
 
 void ARadarNaves::SetVidaPromedio(float _VidaPromedio)
 {
+	VidaPromedio = _VidaPromedio;
+	VidaNave();
 }
 
 float ARadarNaves::GetVidaPromedio()
 {
-	return 0.0f;
+	return VidaPromedio;
 }

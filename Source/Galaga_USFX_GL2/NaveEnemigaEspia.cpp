@@ -8,7 +8,7 @@ ANaveEnemigaEspia::ANaveEnemigaEspia()
     static ConstructorHelpers::FObjectFinder<UStaticMesh> malla(TEXT("StaticMesh'/Game/TwinStick/Meshes/NaveEnemigaEspia.NaveEnemigaEspia'"));
     mallaNaveEnemiga->SetStaticMesh(malla.Object);
     VelocidadVertical = 1.0f;
-    energia = 10
+    energia = 10;
 }
 
 void ANaveEnemigaEspia::Tick(float DeltaTime)

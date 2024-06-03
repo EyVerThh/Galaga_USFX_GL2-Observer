@@ -25,6 +25,17 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "FacadeNaves")
 	class AFacadeNaves* FacadeNaves;
 
+public:
+	TArray<class ANaveEnemiga*> NavesEnemigas;
+	class ARadarNaves* RadarNaves;
+
+	class ANaveEnemiga* NaveEnemigaCaza;
+
+	FVector UbicacionNaveEnemigaCaza;
+
+	float VidaPromedio;
+
+
 };
 
 

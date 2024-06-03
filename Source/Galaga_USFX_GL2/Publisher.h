@@ -27,12 +27,12 @@ public:
 private:
 	UPROPERTY(VisibleAnywhere, Category = "Publicador")
 
-	TArray<AActor*>Suscriptores;   //almacena e
+	TArray<AActor*> Suscriptores;   //almacena e
 
-	class ISuscriptora* Suscriptor;  //referencia a la interfas
+	class ISuscriptor* Suscriptor;  //referencia a la interfas
 public:
-	void Suscrubirse(AActor*_Suscriptor);	
-	void Desuscribirse(AActor*_Suscriptor);
+	void Suscrubirse(AActor* _Suscriptor);	
+	void Desuscribirse(AActor* _Suscriptor);
 	void Notificar();
 };
 	

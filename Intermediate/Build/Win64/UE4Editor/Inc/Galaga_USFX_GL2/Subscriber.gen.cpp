@@ -13,19 +13,19 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSubscriber() {}
 // Cross Module References
-	GALAGA_USFX_GL2_API UClass* Z_Construct_UClass_USubscriber_NoRegister();
-	GALAGA_USFX_GL2_API UClass* Z_Construct_UClass_USubscriber();
+	GALAGA_USFX_GL2_API UClass* Z_Construct_UClass_USuscriptor_NoRegister();
+	GALAGA_USFX_GL2_API UClass* Z_Construct_UClass_USuscriptor();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 	UPackage* Z_Construct_UPackage__Script_Galaga_USFX_GL2();
 // End Cross Module References
-	void USubscriber::StaticRegisterNativesUSubscriber()
+	void USuscriptor::StaticRegisterNativesUSuscriptor()
 	{
 	}
-	UClass* Z_Construct_UClass_USubscriber_NoRegister()
+	UClass* Z_Construct_UClass_USuscriptor_NoRegister()
 	{
-		return USubscriber::StaticClass();
+		return USuscriptor::StaticClass();
 	}
-	struct Z_Construct_UClass_USubscriber_Statics
+	struct Z_Construct_UClass_USuscriptor_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
 #if WITH_METADATA
@@ -34,20 +34,20 @@ void EmptyLinkFunctionForGeneratedCodeSubscriber() {}
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
-	UObject* (*const Z_Construct_UClass_USubscriber_Statics::DependentSingletons[])() = {
+	UObject* (*const Z_Construct_UClass_USuscriptor_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_UInterface,
 		(UObject* (*)())Z_Construct_UPackage__Script_Galaga_USFX_GL2,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubscriber_Statics::Class_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USuscriptor_Statics::Class_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Subscriber.h" },
 	};
 #endif
-	const FCppClassTypeInfoStatic Z_Construct_UClass_USubscriber_Statics::StaticCppClassTypeInfo = {
-		TCppClassTypeTraits<ISubscriber>::IsAbstract,
+	const FCppClassTypeInfoStatic Z_Construct_UClass_USuscriptor_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<ISuscriptor>::IsAbstract,
 	};
-	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_USubscriber_Statics::ClassParams = {
-		&USubscriber::StaticClass,
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_USuscriptor_Statics::ClassParams = {
+		&USuscriptor::StaticClass,
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
@@ -59,24 +59,24 @@ void EmptyLinkFunctionForGeneratedCodeSubscriber() {}
 		0,
 		0,
 		0x000840A1u,
-		METADATA_PARAMS(Z_Construct_UClass_USubscriber_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_USubscriber_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_USuscriptor_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_USuscriptor_Statics::Class_MetaDataParams))
 	};
-	UClass* Z_Construct_UClass_USubscriber()
+	UClass* Z_Construct_UClass_USuscriptor()
 	{
 		static UClass* OuterClass = nullptr;
 		if (!OuterClass)
 		{
-			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_USubscriber_Statics::ClassParams);
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_USuscriptor_Statics::ClassParams);
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USubscriber, 3352048698);
-	template<> GALAGA_USFX_GL2_API UClass* StaticClass<USubscriber>()
+	IMPLEMENT_CLASS(USuscriptor, 1580602178);
+	template<> GALAGA_USFX_GL2_API UClass* StaticClass<USuscriptor>()
 	{
-		return USubscriber::StaticClass();
+		return USuscriptor::StaticClass();
 	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_USubscriber(Z_Construct_UClass_USubscriber, &USubscriber::StaticClass, TEXT("/Script/Galaga_USFX_GL2"), TEXT("USubscriber"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(USubscriber);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_USuscriptor(Z_Construct_UClass_USuscriptor, &USuscriptor::StaticClass, TEXT("/Script/Galaga_USFX_GL2"), TEXT("USuscriptor"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(USuscriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

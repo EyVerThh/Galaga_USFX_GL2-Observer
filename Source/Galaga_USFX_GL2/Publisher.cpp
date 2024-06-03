@@ -9,6 +9,7 @@ APublisher::APublisher()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	Suscriptores= TArray<AActor*>();
 
 }
 
@@ -38,12 +39,12 @@ void APublisher::Desuscribirse(AActor* _Suscriptor)
 
 void APublisher::Notificar()
 {
-		for (AActor* Sub : Suscriptores)
+		for (AActor* Sub : Suscriptores)  
 	{
-		ISubscriber* Suscriptor = Cast<ISuscriptora>(Sub);
+			ISuscriptor* Suscriptor = Cast<ISuscriptor>(Sub);
 		if (Suscriptor)
 		{
-			Suscriptor->Actualizar(this);
+			Suscriptor->actualizar(this);
 		}
 	}	
 }

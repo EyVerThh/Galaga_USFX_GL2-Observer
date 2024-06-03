@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeRadarNaves() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARadarNaves, 1545993811);
+	IMPLEMENT_CLASS(ARadarNaves, 767261116);
 	template<> GALAGA_USFX_GL2_API UClass* StaticClass<ARadarNaves>()
 	{
 		return ARadarNaves::StaticClass();

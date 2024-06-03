@@ -7,6 +7,7 @@
 void ANaveEnemigaCaza::BeginPlay()
 {
 	Super::BeginPlay();
+    posicioninicial = GetActorLocation();
 
 }
 
@@ -16,7 +17,7 @@ ANaveEnemigaCaza::ANaveEnemigaCaza()
 	mallaNaveEnemiga->SetStaticMesh(malla.Object);
 
 	VelocidadYCaza = 100.0f;
-    energia = 10 
+    energia = 10;
 
 }
 
@@ -25,7 +26,21 @@ void ANaveEnemigaCaza::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	Mover(DeltaTime);
+
+    if(bRetornar == true)
+    {
+        SetActorLocation(FMath :: VInterpConstantTo(GetActorLocation(), posicioninicial, DeltaTime, 0.5 ));
+
+        tiempoTranscurrido += DeltaTime;
+
+        if(tiempoTranscurrido >= 5.0f)
+		{
+			bRetornar = false;
+			tiempoTranscurrido = 0.0f;
+		}
+	}   
 }
+  
 
 void ANaveEnemigaCaza::Mover(float DeltaTime)
 {
@@ -47,4 +62,18 @@ void ANaveEnemigaCaza::Mover(float DeltaTime)
         // Establecemos la nueva posición del actor
         SetActorLocation(FVector(PosicionActual.X + NuevaX, NuevaPosicionY, PosicionActual.Z));
     
+}
+
+void ANaveEnemigaCaza::Curarse()
+{
+    vida = 100;
+}
+
+void ANaveEnemigaCaza::recibirDanio()
+{
+    	vida -= 5;
+	if (vida <= 0)
+	{
+		Destroy();
+	}
 }

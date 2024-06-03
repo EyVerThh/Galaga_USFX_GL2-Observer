@@ -1,0 +1,2 @@
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_GL2\Definitions.Galaga_USFX_GL2.h
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Source\Galaga_USFX_GL2\Galaga_USFX_GL2.h

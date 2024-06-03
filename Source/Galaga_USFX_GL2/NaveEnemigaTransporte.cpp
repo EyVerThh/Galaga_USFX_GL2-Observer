@@ -16,10 +16,10 @@ ANaveEnemigaTransporte::ANaveEnemigaTransporte()
 	mallaNaveEnemiga->SetStaticMesh(malla.Object);
 
     VelocidadYTransporte = 100.0f;
-    energia = 10
+    energia = 10;
 
-	dimensionCargaOcupada = 300.0f;
-	dimensionCargaDisponible = 700.0f;
+	/*dimensionCargaOcupada = 300.0f;*/
+	/*dimensionCargaDisponible = 700.0f;*/
 }
 
 void ANaveEnemigaTransporte::Mover(float DeltaTime)
@@ -46,5 +46,5 @@ void ANaveEnemigaTransporte::Mover(float DeltaTime)
 
 void ANaveEnemigaTransporte::Cargar(float dimensionCarga, float pesoCarga)
 {
-	dimensionCargaOcupada = dimensionCargaDisponible - dimensionCarga;
+	/*dimensionCargaOcupada = dimensionCargaDisponible - dimensionCarga;*/
 }

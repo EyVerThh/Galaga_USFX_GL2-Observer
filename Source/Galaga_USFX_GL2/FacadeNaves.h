@@ -5,6 +5,7 @@
 #include "Galaga_USFX_GL2Projectile.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "RadarNaves.h"
 #include "FacadeNaves.generated.h"
 
 
@@ -33,4 +34,14 @@ public:
 public:
 
 	TArray<ANaveEnemiga*> TANavesEnemigas;
+
+public:
+	
+	class ARadarNaves* RadarNaves;
+
+	class ANaveEnemiga* NaveEnemigaCaza;
+
+	FVector UbicacionNaveEnemigaCaza;
+
+	float VidaPromedio;
 };

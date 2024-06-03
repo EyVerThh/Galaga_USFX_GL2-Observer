@@ -16,7 +16,7 @@ class GALAGA_USFX_GL2_API ARadarNaves : public APublisher
 	GENERATED_BODY()
 
 public:
-	ARadar();
+ void ARadarNaves();
 
 protected:
 	virtual void BeginPlay() override;

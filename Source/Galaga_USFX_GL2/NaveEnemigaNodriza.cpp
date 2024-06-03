@@ -9,7 +9,7 @@ ANaveEnemigaNodriza::ANaveEnemigaNodriza()
 	mallaNaveEnemiga->SetStaticMesh(malla.Object);
 
     VelocidadYCaza = 100.0f;
-    energia = 10
+    energia = 10;
 }
 
 void ANaveEnemigaNodriza::Tick(float DeltaTime)

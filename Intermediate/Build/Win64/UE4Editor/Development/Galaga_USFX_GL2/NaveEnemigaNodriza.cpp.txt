@@ -1,0 +1,9 @@
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_GL2\Definitions.Galaga_USFX_GL2.h
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Source\Galaga_USFX_GL2\NaveEnemigaNodriza.h
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Source\Galaga_USFX_GL2\NaveEnemiga.h
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Source\Galaga_USFX_GL2\Subscriber.h
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_GL2\Subscriber.generated.h
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Source\Galaga_USFX_GL2\Publisher.h
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_GL2\Publisher.generated.h
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_GL2\NaveEnemiga.generated.h
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_GL2\NaveEnemigaNodriza.generated.h

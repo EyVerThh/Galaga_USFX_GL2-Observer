@@ -6,9 +6,10 @@
 #include "UObject/Interface.h"
 #include "Subscriber.generated.h"
 
+
 // This class does not need to be modified.
 UINTERFACE(MinimalAPI)
-class USubscriber : public UInterface
+class USuscriptor : public UInterface
 {
 	GENERATED_BODY()
 };
@@ -16,12 +17,13 @@ class USubscriber : public UInterface
 /**
  * 
  */
-class GALAGA_USFX_GL2_API ISubscriber
+class GALAGA_USFX_GL2_API ISuscriptor
 {
 	GENERATED_BODY()
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 
-	virtual void actualizar(class Apublicador* publicador, FString mensaje) = 0;
+	virtual void actualizar(class APublisher* _Pubicador) = 0;
+	virtual void Escapar() = 0;
 };

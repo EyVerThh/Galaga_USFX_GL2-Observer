@@ -1,0 +1,3 @@
+D:\Unreal Engine Documentos\Galaga_USFX_GL2 - Observer\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_GL2\Definitions.Galaga_USFX_GL2.h
+D:\Program Files\Unreal Engine\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Program Files\Unreal Engine\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
